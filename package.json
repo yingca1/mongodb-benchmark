@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "mongodb": "^6.5.0"
+    "mongodb": "^6.5.0",
+    "socks": "^2.8.1"
   }
 }
