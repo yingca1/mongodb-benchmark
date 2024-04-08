@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-benchmark
+  labels:
+    app: mongodb-benchmark
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-benchmark
+  template:
+    metadata:
+      labels:
+        app: mongodb-benchmark
+    spec:
+      containers:
+      - name: mongodb-benchmark
+        image: ghcr.io/yingca1/mongodb-benchmark:latest
